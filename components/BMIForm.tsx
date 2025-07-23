@@ -28,7 +28,7 @@ export default function BMIForm({ onCalculate }: BMIFormProps) {
     if (!parsed.success) {
       const firstError = parsed.error.issues[0]?.message || "Błąd walidacji";
       setError(firstError);
-      onCalculate(null); // ❗ Ukrywamy wynik przy błędzie
+      onCalculate(null); 
       return;
     }
 
